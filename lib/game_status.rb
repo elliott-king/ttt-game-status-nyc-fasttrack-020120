@@ -20,7 +20,7 @@ def won?(board)
       all_same = combo.all? do |space|
         space == first_position
       end
-        print all_same
+      print all_same
       end
     end
   end
