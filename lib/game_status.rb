@@ -19,7 +19,7 @@ def won?(board)
     if !first_position.nil? && first_position != " "
       combo.each do |space|
         if board[space] == first_position
-          puts combo
+          print combo
           won = true
         end
       end
