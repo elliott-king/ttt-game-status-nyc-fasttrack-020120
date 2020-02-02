@@ -28,6 +28,10 @@ def full?(board)
   return board.all? {|space| space == "X" || space == "O"}
 end
 
+def draw?(board)
+  return full?(board) && not won?(board)
+end
+
 puts full?(["X", "O", "X", "O", "X", "X", "O", "X", "O"])
 # print won?(["X", "X", "X", "O", "O", " ", " ", " ", " "])
 
