@@ -16,6 +16,7 @@ def won?(board)
   WIN_COMBINATIONS.each do |combo|
     first_position = board[combo[0]]
     if !first_position.nil? && first_position != " "
+      print combo
       if combo.all?{|space| space == first_position}
         return combo
       end
