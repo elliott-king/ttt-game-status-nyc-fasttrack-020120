@@ -20,7 +20,6 @@ def won?(board)
       if combo.all? {|space| board[space] == first_position}
         return combo
       end
-      # print all_same
     end
   end
   false
