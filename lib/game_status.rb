@@ -13,16 +13,15 @@ WIN_COMBINATIONS = [
 
 def won?(board)
   # players = ["X", "O"]
-  won = false
   WIN_COMBINATIONS.each do |combo|
     first_position = board[combo[0]]
     if !first_position.nil? && first_position != " "
       if combo.all?{|space| space == first_position}
-        won = true
+        return combo
       end
     end
   end
-  won
+  false
 end
 
 # puts won?(["X", "O", "X", "O", "X", "X", "O", "X", "O"])
