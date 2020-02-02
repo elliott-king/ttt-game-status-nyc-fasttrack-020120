@@ -27,9 +27,9 @@ def won?(board)
   won
 end
 
-    
+
   end
-  
+
 end
 
 # Helper Method
