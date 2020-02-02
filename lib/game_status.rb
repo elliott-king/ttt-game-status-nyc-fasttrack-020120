@@ -25,6 +25,7 @@ def won?(board)
 end
 
 # puts won?(["X", "O", "X", "O", "X", "X", "O", "X", "O"])
+puts won?(["X", "X", "X", "O", "O", " ", " ", " ", " "])
 
 # Helper Method
 def position_taken?(board, index)
