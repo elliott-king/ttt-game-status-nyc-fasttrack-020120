@@ -17,8 +17,10 @@ def won?(board)
     first_position = board[combo[0]]
     if !first_position.nil? && first_position != " "
       print combo
-      if combo.all?{|space| space == first_position}
-        return combo
+      all_same = combo.all? do |space| 
+        space == first_position
+      end
+        print all_same
       end
     end
   end
