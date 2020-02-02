@@ -18,8 +18,8 @@ def won?(board)
     if !first_position.nil? && first_position != " "
       print combo
       all_same = combo.all? do |space|
-        print space, first_position
-        space == first_position
+        # print space, first_position
+        board[space] == first_position
       end
       print all_same
     end
