@@ -26,7 +26,6 @@ end
 
 def full?(board)
   return board.all? {|space| space == "X" || space == "O"}
-  
 end
 
 # puts won?(["X", "O", "X", "O", "X", "X", "O", "X", "O"])
