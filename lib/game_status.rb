@@ -21,7 +21,6 @@ def won?(board)
         space == first_position
       end
       print all_same
-      end
     end
   end
   false
