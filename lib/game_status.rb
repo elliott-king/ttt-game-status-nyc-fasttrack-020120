@@ -36,6 +36,16 @@ def over?(board)
   return won?(board) || full?(board)
 end
 
+def winner(board)
+  combo = won(board)
+  if combo
+    return board[combo[0]]    
+  else
+    return nil
+  end
+end
+
+
 # puts full?(["X", "O", "X", "O", "X", "X", "O", "X", "O"])
 # print won?(["X", "X", "X", "O", "O", " ", " ", " ", " "])
 
