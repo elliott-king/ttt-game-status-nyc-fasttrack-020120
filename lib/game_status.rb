@@ -27,11 +27,6 @@ def won?(board)
   won
 end
 
-
-  end
-
-end
-
 # Helper Method
 def position_taken?(board, index)
   !(board[index].nil? || board[index] == " ")
