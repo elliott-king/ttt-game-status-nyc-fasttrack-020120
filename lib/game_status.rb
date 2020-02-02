@@ -11,6 +11,27 @@ WIN_COMBINATIONS = [
   [2,4,6]
 ]
 
+def won?(board)
+  # players = ["X", "O"]
+  won = false
+  WIN_COMBINATIONS.each do |combo|
+    first_position = board[combo[0]]
+    if !first_position.nil? && first_position != " "
+      combo.each do |space|
+        if board[space] == first_position
+          won = true
+        end
+      end
+    end
+  end
+  won
+end
+
+    
+  end
+  
+end
+
 # Helper Method
 def position_taken?(board, index)
   !(board[index].nil? || board[index] == " ")
