@@ -32,7 +32,11 @@ def draw?(board)
   return full?(board) && !won?(board)
 end
 
-puts full?(["X", "O", "X", "O", "X", "X", "O", "X", "O"])
+def over?(board)
+  return won?(board) || full?(board)
+end
+
+# puts full?(["X", "O", "X", "O", "X", "X", "O", "X", "O"])
 # print won?(["X", "X", "X", "O", "O", " ", " ", " ", " "])
 
 # Helper Method
